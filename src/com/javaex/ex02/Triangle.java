@@ -10,15 +10,16 @@ public class Triangle extends Shape{
 	public Triangle() {
 		System.out.println("생성자 Triangle(0) 실행");
 	}
-
+	
 	public Triangle(int width, int height) {
-		super();
+		super("검정", "검정");
 		this.width = width;
 		this.height = height;
+		System.out.println("생성자 Triangle(2) 실행");
 	}
 
-	public Triangle(String fillColor, String lineColor, int width, int height) {
-		super(fillColor, lineColor);
+	public Triangle(String fillColor,String lineColor,int width, int height) {
+		super();
 		this.width = width;
 		this.height = height;
 		System.out.println("생성자 Triangle(4) 실행");
@@ -46,6 +47,10 @@ public class Triangle extends Shape{
 	@Override
 	public String toString() {
 		return "Triangle [width=" + width + ", height=" + height + ", toString()=" + super.toString() + "]";
+	}
+	
+	public void showInfo() {
+		System.out.println("가로: "+width+"세로: "+ height+"면색: "+super.getFillColor()+" 선색: "+super.getLineColor());
 	}
 	
 	

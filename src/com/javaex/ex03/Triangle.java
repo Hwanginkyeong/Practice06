@@ -2,9 +2,11 @@ package com.javaex.ex03;
 
 public class Triangle extends Shape{
 	
+	//필드
 	private int width;
 	private int height;
 	
+	//생성자
 	public Triangle(int width, int height) {
 		this.width = width;
 		this.height = height;

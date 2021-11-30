@@ -12,7 +12,6 @@ public class Shape {
 	}
 
 	public Shape(String fillColor, String lineColor) {
-		super();
 		this.fillColor = fillColor;
 		this.lineColor = lineColor;
 		System.out.println("생성자 Shape(2) 실행");
@@ -41,6 +40,11 @@ public class Shape {
 	public String toString() {
 		return "Shape [fillColor=" + fillColor + ", lineColor=" + lineColor + ", toString()=" + super.toString() + "]";
 	}
+	
+	public void showInfo() {
+		System.out.println("면색: "+fillColor+" 선색: "+lineColor);
+	}
+	
 	
 	
 	
