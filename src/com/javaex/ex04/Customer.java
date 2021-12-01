@@ -34,7 +34,7 @@ public class Customer extends User{
 	
 	
 	public void showInfo() {
-		System.out.println("아이디:"+"패스워드:"+"이름:"+"포인트:");
+		System.out.println("아이디:"+super.id+"패스워드:"+super.password+"이름:"+name+"포인트:"+point);
 	}
 	
 	
