@@ -9,12 +9,9 @@ public class User {
 	
 	
 	//생성자
-	public User() {
-		
-	}
+	public User() {}
 	
 	public User(String id, String password, String name) {
-		super();
 		this.id = id;
 		this.password = password;
 		this.name = name;
@@ -50,6 +47,10 @@ public class User {
 	public String toString() {
 		return "User [id=" + id + ", password=" + password + ", name=" + name + ", toString()=" + super.toString()
 				+ "]";
+	}
+	
+	public void showInfo() {
+		System.out.println("#아이디: "+id+" #패스워드: "+password+" #이름: "+name);
 	}
 	
 	

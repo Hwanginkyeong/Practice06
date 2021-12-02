@@ -8,7 +8,6 @@ public class UserApp {
 		
 		User c01 = new Customer("jws","j1234","정우성",1000);
 		User c02 = new Customer("yjs","y2345","이효리",2000);
-		
 		User e02 = new Employee("마스터","m7788","운영자",5000000);
 		
 		uArray[0] = c01;
@@ -16,7 +15,7 @@ public class UserApp {
 		uArray[2] = e02;
 		
 		for(int i=0; i<uArray.length; i++) {
-			uArray[i].toString();
+			System.out.println(uArray[i]);
 		}
 		
 		System.out.println();

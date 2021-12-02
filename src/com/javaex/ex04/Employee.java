@@ -33,7 +33,7 @@ public class Employee extends User{
 	}
 
 	public void showInfo() {
-		System.out.println("아이디: "+super.id+" 패스워드: "+super.password+" 이름: "+super.name+" 급여: "+this.salary);
+		System.out.println("아이디: "+super.id+" 패스워드: "+super.password+" 이름: "+super.name+" 월급: "+this.salary);
 	}
 	
 	
